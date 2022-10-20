@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <h3>You need an image url and some text for you to start your meme.</h3>
+    <h3>Submitting without any fields will just produce a black square.</h3>
+    <form id="memeInfo">
+        <p>
+          <label> Your image URL:
+            <input type="text" name="url" placeholder="Image URL">
+          </label>
+        </p>
+        <p>
+          <label> Your text at the top:
+            <input type="text" name="topText" placeholder="(Optional) Top Text">
+          </label>
+        </p>
+        <p>
+          <label> Your text at the bottom:
+            <input type="text" name="bottomText" placeholder="(Optional) Bottom Text">
+          </label>
+        </p>
+    
+        <button>Submit</button>
+
+        <p><h3>Click the Image to remove it.</h3></p>
+    </form>
+    <section id="results"></section>
+
+    <script src="app.js"></script>
+</body>
+</html>
